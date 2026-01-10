@@ -25,6 +25,17 @@ const bikes3 = {
     nome: "Bike5",
     peso: 11
  };
+    const arrayBikes = [bikes, bikes2, bikes3, bikes4, bikes5];
+    let minPeso = arrayBikes[0];
+
+    for (let i = 0; i < arrayBikes.length; i++) {
+        if (arrayBikes[i].peso < minPeso.peso) {
+            minPeso = arrayBikes[i];
+        }
+    
+    }
+    console.log(`La bici con il peso minore è ${minPeso.nome}`);
+
 
  
 
