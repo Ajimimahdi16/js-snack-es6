@@ -36,6 +36,36 @@ const bikes3 = {
     }
     console.log(`La bici con il peso minore è ${minPeso.nome}`);
 
+    //corezione in classe 
+
+    /*const arrayBikes = [
+        { nome: "Bike1", 
+          peso: 10 },
+        { nome: "Bike2", 
+          peso: 15 },
+        { nome: "Bike3", 
+          peso: 8 },
+        { nome: "Bike4", 
+          peso: 12 },
+        { nome: "Bike5", 
+          peso: 11 }
+    ];
+
+    function getLightsbike(Array) {
+    if (Array.length <= 0) {
+    return {};
+
+    let lightBike = arrayBikes[0];
+    for (let i = 1; i < arrayBikes.length; i++) {
+    if (arrayBikes[i].peso < lightBike.peso) {
+    lightBike = arrayBikes[i];
+    }
+    return lightBike;
+    }
+    console.log(getLightsbike(arrayBikes));*/
+
+    
+
 
  
 
@@ -80,4 +110,38 @@ const arrayteames = [teams, teams2, teams3, teams4, teams5];
     arrayteames[i].puntiFatti = Math.floor(Math.random() * 100);
     arrayteames[i].falliSubiti = Math.floor (Math.random() * 100);  
     }
+    console.log(arrayteames);
+
+
+    /*correzione in classe 
+
+    function getRandomInt(min, max) {
+        return Math.floor (Math.random() * (max - min + 1)) + min;
+    }
+
+     const teams = [
+        { nome: "juventus", puntiFatti: 0, falliSubiti: 0 },
+        { nome: "milan", puntiFatti: 0, falliSubiti: 0 },   
+        { nome: "inter", puntiFatti: 0, falliSubiti: 0 },
+        { nome: "napoli", puntiFatti: 0, falliSubiti: 0 },
+        { nome: "roma", puntiFatti: 0, falliSubiti: 0 }
+    ];
+
+
+    for (let i = 0; i < teams.length; i++) {
+        teams[i].puntiFatti = getRandomInt (0, 100);
+        teams[i].falliSubiti = getRandomInt (0, 100);
+    }
+        const teamsWithoutpoints = {};
+
+    for (let i = 0; i < teams.length; i++) {
+    const currentTeam = {
+    nome : teams[i].nome,
+    falliSubiti : teams[i].falliSubiti
+    };
+    teamsWithoutpoints.push(currentTeam);
+
+
+
+        
 
